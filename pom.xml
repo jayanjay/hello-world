@@ -90,8 +90,13 @@
         </plugin>
 
         <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>2.3.2</version>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>3.11.0</version> <!-- This is a modern version -->
+               <configuration>
+                 <source>11</source> <!-- Adjust based on your Java version -->
+                 <target>11</target>
+               </configuration>
         </plugin>
 
         <plugin>
