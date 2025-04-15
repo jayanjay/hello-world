@@ -14,7 +14,7 @@
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-     <sonar.host.url>http://13.201.3.51:9000/</sonar.host.url>
+    <sonar.host.url>http://13.201.3.51:9000/</sonar.host.url>
     <sonar.login>sqa_4f0d857afb025b9e8b04482dccf4444401551975</sonar.login>
   </properties>
 
@@ -33,13 +33,11 @@
 
   <build>
     <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
+     <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.3.2</version> <!-- or latest stable -->
+    </plugin>
 
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
@@ -94,8 +92,13 @@
         </plugin>
 
         <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>2.3.2</version>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>3.11.0</version> <!-- This is a modern version -->
+               <configuration>
+                 <source>11</source> <!-- Adjust based on your Java version -->
+                 <target>11</target>
+               </configuration>
         </plugin>
 
         <plugin>
