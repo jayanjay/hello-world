@@ -23,13 +23,20 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
+<!--   <distributionManagement>
 	    <repository>
 	      <id>nexus</id>
 	      <name>helloworld</name>
 	      <url>http://13.127.5.177:8081/repository/helloworld/</url>
 	    </repository>
-  </distributionManagement>
+  </distributionManagement> -->
+	<distributionManagement>
+	  <snapshotRepository>
+	    <id>nexus</id> <!-- Must match the one in settings.xml -->
+	    <url>http://13.127.5.177:8081/repository/helloworld/</url>
+          </snapshotRepository>
+        </distributionManagement>
+
 
   <build>
     <plugins>
