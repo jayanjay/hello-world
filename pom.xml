@@ -24,11 +24,11 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
+	    <repository>
+	      <id>nexus</id>
+	      <name>My HelloWorld Repository</name>
+	      <url>http://13.127.5.177:8081/repository/helloworld/</url>
+	    </repository>
   </distributionManagement>
 
   <build>
