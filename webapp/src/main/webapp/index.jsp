@@ -1,3 +1,2 @@
-<h1> Hello, Welcome to Valaxy Technologies !!! </h1>
-<h2> Deploying on Kubernetes </h2>
-<h3> One last test </h3>
+<h1 align="center">DevOps Training from Hello World</h1>
+<h1 align="center">Enjoy your Practice and Training</h1>
