@@ -33,7 +33,7 @@
 	<distributionManagement>
 	  <snapshotRepository>
 	    <id>nexus</id> <!-- Must match the one in settings.xml -->
-	    <url>http://13.127.5.177:8081/repository/helloworld/</url>
+	    <url>http://65.2.178.182:8081/repository/helloworld/</url>
           </snapshotRepository>
         </distributionManagement>
 
